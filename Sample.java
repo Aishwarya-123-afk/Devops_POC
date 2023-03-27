@@ -2,6 +2,9 @@
 public class hello{
     public static void main(String[] args) {
        int a = 24;
-       return a;
+       int b = 36;
+       int c;
+       c = a + b;
+       return c;
     }
 }
