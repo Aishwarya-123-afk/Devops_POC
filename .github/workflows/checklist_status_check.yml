@@ -1,0 +1,16 @@
+name: Build
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issues:
+    types: [opened, edited, deleted]
+jobs:
+  checklistStatus:
+    name: ChecklistStatus
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mheap/require-checklist-action@v2
+        with:
+          requireChecklist: false # If this is true and there are no checklists detected, the action will fail
+        env:
+          GITHUB_TOKEN: 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
