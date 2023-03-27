@@ -1,0 +1,13 @@
+name: Build
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+   job1:
+    runs-on: ubuntu-latest
+    steps:
+     - name: job 1
+       run: echo job 1
