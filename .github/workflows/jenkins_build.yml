@@ -15,9 +15,11 @@ jobs:
       
       with:
         url: "http://192.168.1.6:8080"
+        run: echo "url"
         user: "Aishwarya"
         token: 11b4d62fe39ef109b948419b82b1871494
         job: "webhook_demo"
+
 # jobs:
 #   trigger-a-jenkins-job:
 #     runs-on: ubuntu-latest
