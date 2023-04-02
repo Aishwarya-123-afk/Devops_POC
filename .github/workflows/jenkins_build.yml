@@ -1,3 +1,10 @@
+name: Jenkins_trigger_build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   trigger-a-jenkins-job:
     runs-on: ubuntu-latest
