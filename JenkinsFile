@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+       stage('GetCode'){
+            steps{
+                git 'https://github.com/Aishwarya-123-afk/Devops_POC.git'
+            }
+         }    
+       
+    }
+}
