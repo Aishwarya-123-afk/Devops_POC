@@ -17,6 +17,7 @@ jobs:
         user: "Aishwarya"
         token: 11b4d62fe39ef109b948419b82b1871494}
         job: "webhook_demo"
+        command_timeout: 200m
 # jobs:
 #   trigger-a-jenkins-job:
 #     runs-on: ubuntu-latest
