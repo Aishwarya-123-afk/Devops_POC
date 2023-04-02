@@ -12,10 +12,10 @@ jobs:
       - id: triggerjenkinsjob
         uses: mickeygoussetorg/trigger-jenkins-job@v1
         with:
-          jenkins-server:  http://192.168.1.6:8080
+          jenkins-server: "http://192.168.1.6:8080"
           jenkins-job: "webhook_demo"
           jenkins-username: "Aishwarya"
-          jenkins-pat: 11b4d62fe39ef109b948419b82b1871494
+          jenkins-pat: "11b4d62fe39ef109b948419b82b1871494"
           poll-time: 10 # how often (seconds) to poll the jenkins server for results
           timeout-value: 600 # How long (seconds) to poll before timing out the action
           verbose: true # true/false - turns on extra logging
